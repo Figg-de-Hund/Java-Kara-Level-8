@@ -16,8 +16,9 @@ public class MyKara extends Kara {
      */
 	public void act() {
     move();
+    move();
     stop();
-    System.out.println("This is a test");
+    System.out.println("Kara Console Log");
 	}
 
   
@@ -25,8 +26,8 @@ public class MyKara extends Kara {
 	 * The main-method is the start of the program where the Kara world is loaded
 	 */
 	public static void main(String[] args) {
-		// KaraWorld world = new KaraWorld("WorldSetup.txt", MyKara.class);
-		KaraWorld world = new KaraWorld("WorldSetup2.txt", MyKara.class);
+		KaraWorld world = new KaraWorld("WorldSetup.txt", MyKara.class);
+		// KaraWorld world = new KaraWorld("WorldSetup2.txt", MyKara.class);
 		world.show();
 	}
 }
